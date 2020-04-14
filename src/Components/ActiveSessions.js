@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import SessionCard from '../ReusableComponents/SessionCard'
+import Sessions from '../ReusableComponents/Sessions'
 
-class Sessions extends Component {
+class ActiveSessions extends Component {
     state = {  }
     render() { 
         const { list } = this.props; // destructor from props
         const sessions = list.map( (e) => ( // mapping over lists
-            <SessionCard key={e.id} {...e} /> // return whole new component, spread element so componetns gets ALL properties
+            <Sessions key={e.id} {...e} /> // return whole new component, spread element so componetns gets ALL properties
         ))
         return ( 
             <div style={{ border: '1px solid blue'}}>
@@ -16,4 +16,4 @@ class Sessions extends Component {
     }
 }
  
-export default Sessions;
+export default ActiveSessions;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const SessionCard = ({name, location, id}) => { // destructure props
+const Sessions = ({name, location, id}) => { // destructure props
 
     const getDetails = () => {
         // props.history.push(`/session/${id}`)
@@ -16,4 +16,4 @@ const SessionCard = ({name, location, id}) => { // destructure props
     )
 }
 
-export default SessionCard;
+export default Sessions;

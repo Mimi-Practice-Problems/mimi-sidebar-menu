@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import SideBarMenu from "./ReusableComponents/SideBarMenu";
-import Sessions from "./Components/Sessions";
+import ActiveSessions from "./Components/ActiveSessions";
 
 export const menuContent = [
   {
@@ -53,7 +53,7 @@ class App extends Component {
     return (
       <div className="App">
         <SideBarMenu content={menuContent} />
-        <Sessions list={list} />
+        <ActiveSessions list={list} />
       </div>
     );
   }
